@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  background-color: $lgb;
+}
+
+main {
+  @include breakpoint-up(xlarge) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.content {
+  padding: 1.5625rem 1.875rem;
+}
+
+.bold {
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding: 1.25rem 0;
+
+  @include breakpoint-up(xlarge) {
+    font-size: 1.25rem;
+  }
+}
+
+.light {
+  opacity: 0.7;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0.15625rem 0;
+}
+//FlexBox
+.flex {
+  display: flex;
+
+  &-r {
+    flex-direction: row;
+  }
+
+  &-c {
+    flex-direction: column;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
